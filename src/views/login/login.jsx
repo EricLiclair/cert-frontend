@@ -43,7 +43,7 @@ export default function Login() {
 
                     <Input label="Email" required={true} />
                     <Input label="Password" type="password" required={true} />
-                    <Button startIcon={<FingerPrint2 height={50} width={50} />} size="large" color="primary" variant="contained">Enter</Button>
+                    <Button size="large" color="primary" variant="contained">Sign In</Button>
                     <Typography variant="caption" component="">New here? Sign Up</Typography>
                 </div>
 

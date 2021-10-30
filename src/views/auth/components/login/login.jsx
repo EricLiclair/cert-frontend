@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { createRef, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
-import { Button } from '@mui/material'
+import { Typography, Button, Grid, Box } from '@mui/material'
 import { Input } from '../../../../theme/components'
+import { certiWhite, certiYellow } from '../../../../assets/images'
+import { FingerPrint, FingerPrint2 } from '../../../../assets/lottie'
 
-export default function Signup() {
+
+export default function Login() {
     return (
         <motion.div
-            animate={{ rotateY: 0 }}
-            transition={{ duration: 0.5 }}
-            initial={{ rotateY: -90 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.2 }}
+            initial={{ opacity: 0 }}
             style={{
                 display: "flex",
                 alignItems: "center",
@@ -19,10 +22,9 @@ export default function Signup() {
             }}
         >
 
-            <Input label="Name" required={true} />
             <Input label="Email" required={true} />
             <Input label="Password" type="password" required={true} />
-            <Button size="large" color="primary" variant="contained">Sign Up</Button>
+            <Button size="large" color="primary" variant="contained">Sign In</Button>
         </motion.div>
     )
 }

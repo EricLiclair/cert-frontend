@@ -10,6 +10,8 @@ export default function Home() {
         authState === "login" ? setAuthState("signup") : setAuthState("login")
     }
 
+    const stateContext = createContext({ authState, setAuthState });
+
     return (
         <Grid
             container
@@ -44,9 +46,9 @@ export default function Home() {
                     {statemap[authState]}
                     {
                         authState === "login" ?
-                            <Typography variant="caption" component="paragraph">New here? <span style={{ cursor: "pointer", color: "GrayText" }} onClick={toggleAuthState}>Sign Up</span></Typography>
+                            <Typography variant="caption" component="paragraph">New here? <span style={{ cursor: "pointer", color: "#ff9b21" }} onClick={toggleAuthState}>Sign Up</span></Typography>
                             :
-                            <Typography variant="caption" component="p">Already have an account? <span style={{ cursor: "pointer", color: "GrayText" }} onClick={toggleAuthState}>Sign In</span></Typography>
+                            <Typography variant="caption" component="p">Already have an account? <span style={{ cursor: "pointer", color: "#ff9b21" }} onClick={toggleAuthState}>Sign In</span></Typography>
                     }
                 </div>
             </Grid>

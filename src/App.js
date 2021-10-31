@@ -1,7 +1,7 @@
 import './App.css';
 import { ThemeProvider } from '@mui/material/styles';
 import themeOptions from './theme/themeOptions';
-import Auth from './views/auth/auth';
+import { Auth, Home } from './views';
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,7 +22,7 @@ function App() {
                 <Auth />
               </Route>
               <Route path="/">
-                <p>This is home</p>
+                <Home />
               </Route>
             </Switch>
           </div>

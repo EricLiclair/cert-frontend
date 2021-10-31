@@ -1,4 +1,3 @@
-import { useRef } from "react"
 import Lottie from "react-lottie"
 import finger_print from './fingerprint/500-fingerprint-security-outline-edited.json'
 import finger_print_2 from './fingerprint2/lf30_tazikiq0.json'

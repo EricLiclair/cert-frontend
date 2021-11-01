@@ -1,9 +1,9 @@
-import React, { createRef, useRef, useState } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
-import { Typography, Button, Grid, Box } from '@mui/material'
+import { Button, } from '@mui/material'
 import { Input } from '../../../../theme/components'
-import { certiWhite, certiYellow } from '../../../../assets/images'
-import { FingerPrint, FingerPrint2 } from '../../../../assets/lottie'
+// import { certiWhite, certiYellow } from '../../../../assets/images'
+// import { FingerPrint, FingerPrint2 } from '../../../../assets/lottie'
 
 
 export default function Login() {

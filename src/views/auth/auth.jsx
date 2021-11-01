@@ -1,6 +1,5 @@
-import { TextField, Button, Grid, Typography } from '@mui/material'
-import React, { createContext, useState } from 'react'
-import { motion } from "framer-motion"
+import { Grid, Typography } from '@mui/material'
+import React, { useState } from 'react'
 import statemap from './statemap'
 import { certiWhite } from '../../assets/images'
 
@@ -10,7 +9,6 @@ export default function Home() {
         authState === "login" ? setAuthState("signup") : setAuthState("login")
     }
 
-    const stateContext = createContext({ authState, setAuthState });
 
     return (
         <Grid
@@ -20,7 +18,7 @@ export default function Home() {
             alignItems="stretch"
             sx={{ height: "calc(100vh - 2rem)" }}
         >
-            <Grid className="hide-small" sx={{ border: "solid 1px black" }}
+            <Grid className="hide-small"
                 container
                 direction="row"
                 justifyContent="center"
@@ -29,7 +27,7 @@ export default function Home() {
                 xs={12}
                 sm={6}
                 md={6}>
-                <img src={certiWhite} />
+                <img alt="certificate representation" src={certiWhite} />
             </Grid>
             <Grid
                 sm={6}
